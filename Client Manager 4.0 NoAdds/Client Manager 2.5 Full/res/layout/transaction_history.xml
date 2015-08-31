@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     
+    >
+     
+    <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  android:id="@+id/transaction_history_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  !com.google.ads.AdView 
+                       android:id="@+id/adView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       ads:adUnitId="a14e0e2eec61677"
+                       ads:adSize="BANNER"
+                       ads:loadAdOnCreate="true"
+                       android:layout_alignParentTop="true"
+                         />
+    <TableRow>
+  <TextView
+	            android:padding="3dip" android:text="Client:   "/>
+	            <TextView android:id="@+id/transaction_history_name" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            ></TextView>
+	              </TableRow>
+	              <TableRow>
+ 				 <TextView
+	            android:padding="3dip" android:text="Reference:   "/>
+	            <TextView android:id="@+id/transaction_history_reference" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	              </TableRow>
+	              
+	              <TableRow>
+ 				 <TextView
+	            android:padding="3dip" android:text="Total Payments:   "/>
+	            <TextView android:id="@+id/transaction_history_totalpayments"
+				android:typeface="serif"
+	            android:textStyle="bold"	             
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	              </TableRow>
+	              	              
+
+	           
+  <TableRow>
+	            <TextView
+	            android:padding="3dip" android:text="   "/>
+	    
+</TableRow>
+ 		
+	        <TextView
+	            android:padding="3dip" android:text="Payment History  :    "/>
+	            <TextView android:layout_width="wrap_content"  
+	            android:padding="4dip"
+	            android:layout_height="wrap_content"
+	            android:typeface="monospace"
+	            android:textStyle="italic" 
+	            android:id="@+id/transaction_history_payments"></TextView>
+	  
+	    	  
+</TableLayout>
+</ScrollView>

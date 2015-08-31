@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:background="@drawable/background2"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent">
+  <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:stretchColumns="1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    <TableRow>
+ 		 <TextView
+	            android:padding="3dip" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:textSize="16dip" android:text="Client Name:   "/>
+	            
+	     <TextView android:id="@+id/info_name" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	     ></TextView>
+ 	</TableRow>
+	<TableRow>
+ 		 <TextView
+	            android:padding="3dip" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:textSize="16dip" android:text="Reference :   "/>
+	     <TextView android:id="@+id/info_reference" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	</TableRow>
+		<TableRow>
+ 		 <TextView
+	            android:padding="3dip" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:textSize="16dip" android:text="Phone Number :   "/>
+	     <TextView android:id="@+id/info_phone" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	</TableRow>
+		<TableRow>
+ 		 <TextView
+	            android:padding="3dip" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:textSize="16dip" android:text="Email :   "/>
+	     <TextView android:id="@+id/info_email" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	</TableRow>
+		<TableRow>
+ 		 <TextView
+	            android:padding="3dip" 
+	            android:typeface="serif"
+	            android:textStyle="bold"
+	            android:textSize="16dip" android:text="Address :   "/>
+	     <TextView android:id="@+id/info_address" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="fill_parent"
+	            android:gravity="right"></TextView>
+	</TableRow>
+	
+		
+	
+
+	    	  
+</TableLayout>
+</ScrollView>

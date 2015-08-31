@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ClientManagerFull"
+      android:versionCode="9"
+      android:versionName="4.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<uses-sdk android:minSdkVersion="4" 
+          android:targetSdkVersion="8"
+          android:maxSdkVersion="11" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	 <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="App" android:debuggable="false">
+        <activity android:name="Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>       
+        </activity>
+        <activity android:name=".ClientList" 
+                  android:label="@string/app_name"
+                   android:cacheColorHint="#FFFFFF"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+         <activity android:name=".AddClient" 
+                  android:label="Add a New Client"
+                  >
+        </activity>
+        <activity android:name=".EditClient" 
+                  android:label="Edit a Client"
+                  >
+        </activity>
+         <activity android:name=".AddTransaction" 
+                  android:label="Add a New Payment"
+                  > 
+        </activity>
+        <activity android:name=".FinancesTab" 
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name="AppointmentList" 
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name=".AddAppointment" 
+                  android:label="Add Upcoming Class">
+        </activity>
+        <activity android:name=".ShowInfo" 
+                  android:label="Client Information"
+                  >
+        </activity>
+        <activity android:name=".DebtList" 
+                  android:label="Debt List"
+                  >
+        </activity>
+        <activity android:name=".NotesList" 
+                  android:label="Notes List"
+                  >
+        </activity>
+                <activity android:name=".AddNote" 
+                  android:label="Add Note"
+                  >
+        </activity>
+        <activity android:name=".PaymentsList" 
+                  android:label="Payments"
+                 >
+        </activity>
+                 <activity android:name=".EditNote" 
+                  android:label="Edit Note"
+                  >
+        </activity>
+                 <activity android:name=".ShowNote" 
+                  android:label="Show Note"
+                  >
+        </activity>
+         <activity android:name=".EditTransaction" 
+                  android:label="Edit Payment"
+                  >
+        </activity>
+         <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation"/>
+    </application>
+</manifest>

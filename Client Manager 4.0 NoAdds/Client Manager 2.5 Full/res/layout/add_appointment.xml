@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/background2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+        
+	    <TableLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	  android:stretchColumns="1"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content">
+	    <TableRow android:layout_weight="1">
+			  <TextView
+		        android:padding="3dip" android:text="Client:   "/>
+		        <TextView android:id="@+id/add_appointment_name" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        ></TextView>
+		</TableRow>
+		<TableRow android:layout_weight="1">
+					 <TextView
+	            android:padding="3dip" android:text="Reference:   "/>
+	            <TextView android:id="@+id/add_appointment_reference" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+		</TableRow>
+		           
+	  <TableRow android:layout_weight="1">        
+		        <TextView
+		            android:padding="3dip" android:text="Date"/>
+		            <TextView
+		            android:padding="3dip" android:text="   "/>
+		</TableRow>
+	  <DatePicker android:id="@+id/add_appointment_date" 
+	  				android:layout_width="wrap_content" 
+	  				android:layout_gravity="center_vertical" 
+	  				android:layout_height="wrap_content" 
+	  				android:layout_weight="1">
+	  </DatePicker>           
+	  <TableRow android:layout_weight="1"> 
+		        <TextView
+		            android:padding="3dip" android:text="Time: "/>
+		            <TimePicker android:id="@+id/add_appointment_time" 
+		            android:layout_width="wrap_content" 
+		            android:layout_height="wrap_content">
+		            </TimePicker>
+	</TableRow>
+	  <TableRow android:layout_weight="1">
+		        <TextView
+		            android:padding="3dip" android:text="Hours"/>
+		        <EditText android:layout_width="fill_parent" 
+		        android:gravity="right" 
+		        android:id="@+id/add_appointment_hours" 
+		        android:padding="3dip" 
+		        android:layout_height="wrap_content" 
+		        android:text=" "
+		        android:inputType="number"></EditText>
+		</TableRow>
+		<TextView
+		            android:padding="3dip" android:text="   "/>
+		      <TableRow android:layout_weight="1">
+		        
+		        <TextView
+		            android:padding="3dip" android:text="   "/>
+		            <Button android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:id="@+id/add_appointment_recurrence" 
+					android:text="Set Recurrence" 
+					android:layout_weight="1">
+		</Button>
+				</TableRow> 
+				<TextView
+		            android:padding="3dip" android:text="   "/>
+		<Button android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/add_appointment_button" 
+		android:text="Add Appointment" 
+		android:layout_weight="1"></Button>
+	
+		   !com.google.ads.AdView 
+                       android:id="@+id/adView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       ads:adUnitId="a14e0e2eec61677"
+                       ads:adSize="BANNER"
+                       ads:loadAdOnCreate="true"
+                       android:layout_alignParentBottom="true"
+                         />  	  
+	</TableLayout>
+	
+</ScrollView>

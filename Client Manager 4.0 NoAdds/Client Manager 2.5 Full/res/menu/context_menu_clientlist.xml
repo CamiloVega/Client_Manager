@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+           <item android:id="@+id/context_clientlist_transaction_history"
+          android:title="Payment History" /> 
+           <item android:id="@+id/context_clientlist_addtransaction"
+          android:title="Add a Payment" /> 
+          <item android:id="@+id/context_clientlist_addappointment"
+          android:title="Add an Appointment" /> 
+           <item android:id="@+id/context_clientlist_callclient"
+          android:title="Call Contact"/> 
+          <item android:id="@+id/context_clientlist_showmap"
+          android:title="Show Address In Map"/> 
+              <item android:id="@+id/context_clientlist_editclient"
+          android:title="Edit Contact"/> 
+          <item android:id="@+id/context_clientlist_emailclient"
+          android:title="Email Contact"/> 
+          <item android:id="@+id/context_clientlist_notesclient"
+          android:title="Notes"/> 
+              <item android:id="@+id/context_clientlist_deleteclient"
+          android:title="Delete Contact"/> 
+</menu>

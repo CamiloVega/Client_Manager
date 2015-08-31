@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_clientlist_addnewclient"
+          android:title="Add New Contact"
+          android:icon="@drawable/add_student1" /> 
+    <item android:id="@+id/menu_clientlist_rate"
+          android:title="Rate and Comment"
+          android:icon="@drawable/rate_icon" />                    
+   
+</menu>

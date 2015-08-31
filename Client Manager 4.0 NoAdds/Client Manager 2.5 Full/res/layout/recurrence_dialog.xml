@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:stretchColumns="1"
+  android:id="@+id/recurrencedialog_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+	              <TableRow android:layout_weight="1" >
+ 				 <TextView
+	            android:padding="3dip" android:text="Additional \n Appointments"/>
+	            <EditText android:id="@+id/recurrencedialog_times" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:inputType="number"></EditText>
+	              </TableRow>
+	              <TableRow android:layout_weight="1" >
+ 				 <TextView
+	            android:padding="3dip" android:text="Every "/>
+	            <EditText android:id="@+id/recurrencedialog_days" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:inputType="number" ></EditText>
+	           <Spinner 
+					        android:id="@+id/recurrencedialog_spinner"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:prompt="@string/choose_type_recurrence"
+					    />    
+	              </TableRow>
+	           	    	        
+
+</TableLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, IntentoTab!</string>
+    <string name="app_name">Client Manager Full</string>
+    <color name="white">#0B0B3B</color>
+        <string name="choose_type">Choose Type of Contact</string>
+         <string name="choose_type_recurrence">Choose Increment</string>
+        <string name="tutorial">Start by pressing the menu button to add a new contact. Contacts in Green are clients, contacts in red are providers. To interact with a contact long press the name to expand the context menu. </string>
+    <string-array name="type">
+        <item>Client</item>
+        <item>Provider</item> 
+    </string-array>
+    <string-array name="recurrencetime">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item> 
+    </string-array>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+     android:background="@drawable/background2"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+     android:layout_height="match_parent">
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:id="@+id/layout_addclient" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	    <RelativeLayout
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent">
+     !com.google.ads.AdView 
+                       android:id="@+id/adView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       ads:adUnitId="a14e0e2eec61677"
+                       ads:adSize="BANNER"
+                       ads:loadAdOnCreate="true"
+                       android:layout_alignParentBottom="true"
+                         />
+
+        </RelativeLayout>
+	    <TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:stretchColumns="1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    <TableRow>
+ 		 <TextView
+	            android:padding="3dip" android:text="Client:   "/>
+	            <TextView android:id="@+id/add_transaction_name" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            ></TextView>
+	              </TableRow>
+	              <TableRow>
+ 				 <TextView
+	            android:padding="3dip" android:text="Reference:   "/>
+	            <TextView android:id="@+id/add_transaction_reference" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:gravity="right"></TextView>
+	  </TableRow>
+	           
+ 	 <TableRow>
+	        
+	        <TextView
+	            android:padding="3dip" android:text="Date"/>
+	            <TextView
+	            android:padding="3dip" android:text="   "/>
+	    
+	</TableRow>
+	    	<DatePicker android:id="@+id/add_transaction_datepicker" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"></DatePicker>
+	    
+  	<TableRow>
+	        <TextView
+	            android:padding="3dip" android:text="Service Provided:"/>
+	        <EditText android:layout_width="fill_parent" 
+	        android:gravity="right" 
+	        android:id="@+id/add_transaction_service" 
+	        android:padding="3dip" 
+	        android:layout_height="wrap_content" 
+	        android:text=" " ></EditText>
+	 </TableRow>
+	     <TableRow>
+ 				 <TextView
+	            android:padding="3dip" android:text="Total Payment:   "/>
+	            <EditText android:gravity="right"
+	            android:padding="3dip"
+	           	android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+	            android:id="@+id/add_transaction_payment"
+	            android:inputType="numberDecimal"></EditText>
+	     </TableRow>
+          <CheckBox 
+           	android:text="Payment Received" 
+       		android:id="@+id/add_transaction_checkbox" 
+      		android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content">
+       	  </CheckBox>
+	<Button 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/add_transaction_button_add" 
+		android:text="Add Payment">
+	</Button>    	 
+</TableLayout>
+</LinearLayout>
+</ScrollView>
